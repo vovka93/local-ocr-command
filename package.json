@@ -1,0 +1,13 @@
+{
+  "name": "local-ocr-command",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "OpenClaw plugin that adds /ocr as a local no-LLM OCR fast-path for inbound images.",
+  "keywords": ["openclaw", "plugin", "ocr", "tesseract", "signal", "telegram"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vovka93/local-ocr-command.git"
+  }
+}
