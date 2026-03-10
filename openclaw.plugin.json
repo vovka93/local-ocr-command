@@ -8,11 +8,11 @@
     "properties": {
       "inboundDir": {
         "type": "string",
-        "default": "/home/vova/.openclaw/media/inbound"
+        "default": "~/.openclaw/media/inbound"
       },
-      "ocrCliPath": {
+      "dockerImage": {
         "type": "string",
-        "default": "/home/vova/.openclaw/workspace/mcp/tesseract-ocr/src/cli.js"
+        "default": "tesseractshadow/tesseract4re:latest"
       },
       "defaultLang": {
         "type": "string",

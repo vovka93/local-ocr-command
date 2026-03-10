@@ -11,9 +11,8 @@ OpenClaw plugin that adds `/ocr` as a local no-LLM OCR fast-path for inbound ima
 
 ## Requirements
 
-This plugin expects a working local OCR CLI, for example the Tesseract MCP/CLI created at:
-
-`/home/vova/.openclaw/workspace/mcp/tesseract-ocr/src/cli.js`
+This plugin is self-contained and runs OCR through Dockerized Tesseract.
+It does not depend on a workspace-local OCR CLI path.
 
 ## Install
 
@@ -31,8 +30,8 @@ openclaw plugins install git+https://github.com/vovka93/local-ocr-command.git
       "local-ocr-command": {
         "enabled": true,
         "config": {
-          "inboundDir": "/home/vova/.openclaw/media/inbound",
-          "ocrCliPath": "/home/vova/.openclaw/workspace/mcp/tesseract-ocr/src/cli.js",
+          "inboundDir": "~/.openclaw/media/inbound",
+          "dockerImage": "tesseractshadow/tesseract4re:latest",
           "defaultLang": "eng+ukr",
           "maxAgeMinutes": 10
         }
