@@ -5,6 +5,11 @@
   "type": "module",
   "description": "OpenClaw plugin that adds /ocr as a local no-LLM OCR fast-path for inbound images.",
   "keywords": ["openclaw", "plugin", "ocr", "tesseract", "signal", "telegram"],
+  "openclaw": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
